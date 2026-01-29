@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about-me">
+                <h2>About Me</h2>
+                <div>
+                    <p>Hi, I'm Errol — a 4th-year IT student and passionate web developer from the Philippines. I specialize in building full‑stack web applications with a focus on clean, modern, and user-friendly designs. I enjoy turning complex ideas into intuitive digital experiences, blending functionality with aesthetics to create premium web apps. Constantly learning and experimenting with new technologies, I strive to make projects that are not just functional but also visually engaging and impactful.</p>
+                    <img src="image.png" alt="My professional picture." width="200">
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>My Projects</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Project Description</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Blogify</td>
+                            <td>A website for different blogs with AI generated content.</td>
+                            <td>2026</td>
+                        </tr>
+                        <tr>
+                            <td>VigEnture</td>
+                            <td>A website that helps user get an itinerary of Metro Vigan.</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td>Ignis</td>
+                            <td>A website for personal message using realtime chat.</td>
+                            <td>2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <form action="portfolio.html" method="POST" id="contact">
+            <section class="personal-info">
+                <h2>Contact Me</h2>
+
+                <label for="fullName">Full Name:</label>
+                <input type="text" name="fullName" id="fullName" required> 
+
+                <label for="email">Email Address:</label>
+                <input type="text" name="email" id="email" required> 
+            </section>
+
+            <fieldset>
+                <legend>How did you hear about this portfolio?</legend>
+
+                <input type="radio" id="friend" name="about">
+                <label for="friend">Friend</label> 
+
+                <input type="radio" id="social-media" name="about">
+                <label for="social-media">Social Media</label> 
+
+                <input type="radio" id="search-engine" name="about">
+                <label for="search-engine">Search Engine</label> 
+
+                <input type="radio" id="other" name="about">
+                <label for="other">Other</label>         
+            </fieldset> 
+
+            <fieldset>
+                <legend>Skills/Interests</legend>
+
+                <input type="checkbox" name="web-dev" id="web-dev">
+                <label for="web-dev">Web Development</label> 
+                <input type="checkbox" name="design" id="design">
+                <label for="design">UI/UX Design</label> 
+
+                <input type="checkbox" name="photography" id="photography">
+                <label for="photography">Photography</label> 
+            </fieldset>
+
+            <section class="comments">
+                <label for="comments">Comments or Messages:</label> 
+                <textarea name="comments" id="comments"></textarea>
+            </section> 
+
+            <input type="submit" value="Submit" id="submit"> 
+        </form>
+
+
+        <footer>
+            <p>&copy; Errol 2026</p>
+        </footer>
+    </body>
+</html>
+
+

@@ -7,99 +7,198 @@
 body {
     font-family: "Inter", sans-serif;
     background-color: rgb(247, 251, 255);
-    max-width:50%;
-    margin: auto;
-    border: 1px solid gainsboro; 
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 /* header */
 header {
-    background-color: rgb(255, 240, 242);
-    text-align: center;
-    padding: 15px 0px 15px 0px;
-    border-radius: 20px 20px 0px 0px;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 600px;
 }
 
 header ul {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 20px
 }
 
 header li {
     list-style-type: none;
-    font-size: 14px;
-    margin-top: 10px;
 }
 
 header a {
     text-decoration: none;
-    color: black;
-    transition: color 0.3s;
+    color: white;
+    transition: 0.3s color;
 }
 
-header a:hover {
-    color: red;
+header a:hover{
+    color: rgb(209, 185, 206);
 }
 
+
+/* layout */
+main, form {
+    max-width: 70%;
+    margin: auto;
+    border: 1px solid #bdbdbd;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 50px;
+    background-color: #e7eff1;
+}
+ 
 
 /* about me */
-.about-me {
-    background-color: rgb(255, 255, 255);
-    padding: 10px 15px 15px 15px;
-}
-
-.about-me h2 {
-    margin-bottom: 30px;
-    font-weight: 500;
-}
-
-.about-me div {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.about-me p {
-    padding: 0px 10px 0px 10px;
-    line-height: 24px;
-    font-size: 16px;
-    text-align: justify;
-}
-
-
-/* projects */
-.projects {
-    background-color: rgb(255, 215, 215);
-    padding: 10px 15px 15px 15px;
-}
-
-.projects h2 {
-    margin-bottom: 30px;
-}
-
-.projects table {
-    width: 100%;
-    border: 1px solid;
+#about-me, #projects, .personal-info, fieldset, .comments {
+    border: 1px solid #bdbdbd;
+    border-radius: 15px;
+    padding: 30px 40px;
     background-color: white;
 }
 
-.projects h2 {
-    margin-bottom: 30px;
-    font-weight: 500;
+#about-me {
+    margin-bottom: 15px;
 }
 
-.projects th,td {
-    border: 1px solid gray;
-    padding: 8px;
-    background-color: gainsboro; 
+#about-me h2, #projects h2, .personal-info h2, .comments label {
+    margin-bottom: 40px;
 }
 
-.projects th {
-    background-color: pink;
+#about-me div {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#about-me p {
+    text-align: justify;
+    padding: 0px 0px 0px 60px;
+    line-height: 25px;
+}
+
+#about-me img {
+    border-radius: 10px;
+    transition: 0.3s all;
+}
+
+#about-me img:hover {
+    scale: 1.05;
+}
+
+/* projects */
+#projects table {
+    width: 100%;
+    padding: 3px;
+}
+
+#projects table, th, td {
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+}
+
+#projects th {
+    padding: 10px 20px;
+    background-color: #e7eff1;
+}
+
+#projects td {
+    padding: 5px 10px;
+}
+
+
+/* contact */
+.personal-info label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.personal-info input {
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    padding: 8px 14px;
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    transition: 0.3s all;
+}
+
+.personal-info input:focus {
+    border-color: black;
+}
+
+.personal-info #fullName {
+    margin-bottom: 20px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction:row;
+    border-radius: 20px;
+    gap: 5px
+}
+
+fieldset label {
+    margin-right: 20px;
+}
+
+legend, .comments label {
+    font-size: 16px;
     font-weight: 600;
+}
+
+.comments {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comments textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    transition: 0.3s all;
+    padding: 8px 14px;
+}
+
+.comments textarea:focus {
+    outline: 1px solid black;
+}
+
+#submit {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #bdbdbd;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    transition: 0.3s all;
+}
+
+#submit:hover {
+    scale: 1.05;
+}
+
+#submit:active {
+    scale: 0.95;
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+    border-top: 1px solid #bdbdbd;
+    margin-top: 100px;
+    padding: 15px 0px;
+    font-size: 12px;
 }

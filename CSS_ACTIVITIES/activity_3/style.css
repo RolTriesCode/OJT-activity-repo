@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+header {
+  background-color: dodgerblue;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid gainsboro;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  background-color: gainsboro;
+  padding: 8px;
+  gap: 15px
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-bar, .main-content {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  background-color: lightcoral;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  color: white; 
+}
+
+footer {
+  background-color: orangered;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
