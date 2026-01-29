@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgb(247, 251, 255);
+    max-width:50%;
+    margin: auto;
+    border: 1px solid gainsboro; 
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* header */
+header {
+    background-color: rgb(255, 240, 242);
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header li {
+    list-style-type: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: red;
+}
+
+
+/* about me */
+.about-me {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px 15px 15px;
+}
+
+.about-me h2 {
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.about-me div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.about-me p {
+    padding: 0px 10px 0px 10px;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+/* projects */
+.projects {
+    background-color: rgb(255, 215, 215);
+    padding: 10px 15px 15px 15px;
+}
+
+.projects h2 {
+    margin-bottom: 30px;
+}
+
+.projects table {
+    width: 100%;
+    border: 1px solid;
+    background-color: white;
+}
+
+.projects h2 {
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.projects th,td {
+    border: 1px solid gray;
+    padding: 8px;
+    background-color: gainsboro; 
+}
+
+.projects th {
+    background-color: pink;
+    font-weight: 600;
+}
