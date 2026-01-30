@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf6fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+}
+
+header,
+input[type="submit"] {
+    background-color: rgb(21, 124, 249);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form,
+ul {
+    margin-top: 20px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 5px 0px 0px 5px;
+}
+
+form input[type="text"]:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+input {
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"] {
+    padding: 0px 20px;
+    border: 1px solid #ccc;
+    border-radius: 0px 5px 5px 0px;
+    background-color: rgb(21, 124, 249);
+    cursor: pointer;
+    border: 1px solid rgb(21, 124, 249);
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(11, 99, 207);
+}
+
+ul {
+    list-style: none;
+}
+
+ul li button {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgb(209, 247, 247);
+    font-size: 16px;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#assignment-btn {
+    background-color: rgb(157, 179, 149);
+    text-decoration: line-through;
+}
