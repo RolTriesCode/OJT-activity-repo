@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Overflow Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg"
+                    alt="Stack Overflow" class="logo-icon">
+                <span class="logo-text">stack<span class="fw-bold">overflow</span></span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">OverflowAI</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="auth-buttons">
+                <button class="btn btn-login">Log in</button>
+                <button class="btn btn-signup">Sign up</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="layout-container">
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <div class="nav-section">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="Stack Overflow/icons/home.png" alt="Home">
+                                Home
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="Stack Overflow/icons/questions.png" alt="Questions">
+                                Questions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="Stack Overflow/icons/tags.png" alt="Tags">
+                                Tags
+                            </a>
+                        </li>
+                    </ul>
+                    <div style="margin-top: 1.5rem;"></div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="Stack Overflow/icons/users.png" alt="Users">
+                                Users
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="Stack Overflow/icons/companies.png" alt="Companies">
+                                Companies
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <span class="section-title">LABS</span>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="Stack Overflow/icons/discussions.png" alt="Discussions">
+                                Discussions
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <div class="content">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Every <span class="highlight">developer</span> has a tab open to Stack Overflow.</h1>
+                    <p>For over 15 years we've been the Q&A platform of choice that millions of people visit every month
+                        to ask questions, learn, and share technical knowledge.</p>
+                    <div class="hero-actions">
+                        <button class="btn btn-signup">Sign up</button>
+                        <a href="#" class="link">Visit the community</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="Stack Overflow/illo-home-hero.png" alt="Stack Overflow Illustration">
+                </div>
+            </section>
+
+            <section class="services">
+                <h2 class="section-heading">Services for companies of all shapes & sizes</h2>
+
+                <div class="card card-teams">
+                    <div class="card-body">
+                        <div class="card-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg"
+                                alt="Teams">
+                            <div class="logo-text-wrapper">
+                                <span class="logo-text">stack<span class="fw-bold">overflow</span></span>
+                                <span class="logo-subtext">FOR TEAMS</span>
+                            </div>
+                        </div>
+                        <p>Where developers and technologists share private knowledge with coworkers.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-teams">Explore Teams</button>
+                            <a href="#" class="link">Try for free</a>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="Stack Overflow/home-teams.png" alt="Teams Preview">
+                    </div>
+                </div>
+
+                <div class="card card-ai">
+                    <div class="card-body">
+                        <div class="card-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg"
+                                alt="AI">
+                            <div class="logo-text-wrapper">
+                                <span class="logo-text">overflow<span class="fw-bold-ai">AI</span></span>
+                            </div>
+                        </div>
+                        <p><span class="fw-bold">Now available!</span> A suite of GenAI tools for Stack Overflow for
+                            Teams that
+                            helps connect employees to knowledge faster.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-ai">Supercharge your Team &gt;</button>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="Stack Overflow/home-overflowai.png" alt="AI Preview">
+                    </div>
+                </div>
+
+                <div class="small-cards">
+                    <div class="card small">
+                        <div class="card-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg"
+                                alt="Advertising">
+                            <div class="logo-text-wrapper">
+                                <span class="logo-text">stack<span class="fw-bold">overflow</span></span>
+                                <span class="logo-subtext">ADVERTISING</span>
+                            </div>
+                        </div>
+                        <p>Reach the world's largest audience of developers and technologists.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-blue">Advertising solutions</button>
+                            <a href="#" class="link">Build your employer brand</a>
+                        </div>
+                    </div>
+                    <div class="card small">
+                        <div class="card-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg"
+                                alt="API">
+                            <div class="logo-text-wrapper">
+                                <span class="logo-text">overflow<span class="fw-bold-ai1">API</span></span>
+                            </div>
+                        </div>
+                        <p>A subscription-based API service that provides continuous access to Stack Overflow's public
+                            dataset to train and fine-tune large language models.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-blue">API solutions for business</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="work-here">
+                <h2 class="section-heading">Work here</h2>
+                <div class="card card-careers">
+                    <div class="card-body">
+                        <div class="card-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg"
+                                alt="Stack Overflow">
+                            <span>stack<span class="fw-bold">overflow</span></span>
+                        </div>
+                        <h3>Join our mission to help empower the world to develop technology through collective
+                            knowledge.</h3>
+                        <div class="card-actions">
+                            <button class="btn btn-blue">Careers at Stack Overflow</button>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="Stack Overflow/illo-home-careers.png" alt="Careers Illustration">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

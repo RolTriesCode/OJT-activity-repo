@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.86);
+}
+
+/* header */
+header {
+    background-color: #712cf9;
+    color: white;
+    padding: 15px 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header section,
+ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+}
+
+header form svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #ffffff;
+}
+
+header form input {
+    width: 100%;
+    padding: 8px 8px 8px 40px;
+    border: 1px solid gainsboro;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.173);
+    color: white;
+}
+
+header form input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+
+/* Main */
+main {
+    margin: 50px 0px 80px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+
+/* hero section */
+.hero-section h1 {
+    font-size: 54px;
+    font-weight: 500;
+    margin: auto;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    width: 50%;
+    margin: auto;
+    color: rgb(167, 167, 167);
+    line-height: 36px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-section button {
+    border-radius: 5px;
+    color: white;
+}
+
+.hero-section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.install-btn {
+    background-color: rgba(81, 81, 81, 0.094);
+    border: 1px solid rgba(220, 220, 220, 0.174);
+    font-size: 17.5px;
+    padding: 18px 50px 18px 15px
+}
+
+.docs-btn {
+    background-color: #712cf9;
+    border: 1px solid #712cf9;
+    font-size: 20px;
+    padding: 18px 32px;
+}
+
+.hero-section ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.version {
+    list-style: none;
+}
+
+.hero-section ul li a {
+    color: #6c757d;
+}
+
+
+/* get started section */
+.get-started-section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-started-section svg {
+    color: #712cf9;
+}
+
+.get-started-section .icon-div {
+    background-color: #702cf92e;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.get-started-section h1 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.get-started-section p {
+    width: 70%;
+    margin-top: 20px;
+    line-height: 28px;
+}
+
+.installation-docs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.installation-docs a,
+.installation-docs svg {
+    color: #5197ff;
+}

@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #232629;
+    line-height: 1.5;
+    background-color: #ffffff;
+    height: fit-content;
+    border: 1px solid;
+}
+
+/* Typography */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    color: #232629;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.btn-teams,
+.btn-blue,
+.btn-ai {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.btn-login {
+    background-color: transparent;
+    color: #0074cc;
+    border-color: #7aa7c7;
+}
+
+.btn-login:hover {
+    background-color: #e1ecf4;
+}
+
+.btn-signup {
+    background-color: hsl(210, 77%, 46%);
+    color: #ffffff;
+    border-color: hsl(210, 77%, 46%);
+}
+
+.btn-signup:hover {
+    background-color: #0074cc;
+}
+
+.btn-teams {
+    background-color: hsl(210, 77%, 46%);
+    color: #ffffff;
+}
+
+.btn-ai {
+    background-color: #f48225;
+    color: #ffffff;
+}
+
+.btn-blue {
+    background-color: hsl(210, 77%, 46%);
+    color: #ffffff;
+}
+
+.link {
+    color: #0074cc;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.link:hover {
+    color: #005999;
+}
+
+/* Top Nav */
+.top-nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 3px solid #f48225;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    height: 50px;
+}
+
+.nav-container {
+    max-width: 1264px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 1.5rem;
+}
+
+.logo-icon {
+    height: 30px;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    color: #232629;
+    letter-spacing: -0.02em;
+}
+
+.logo-text .fw-bold {
+    font-weight: 700;
+    color: #000;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    color: #6a737c;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 100px;
+}
+
+.main-nav a:hover {
+    background-color: #f1f2f3;
+    color: #232629;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 1rem;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #babfc4;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.auth-buttons .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+}
+
+/* Layout */
+.layout-container {
+    max-width: 1264px;
+    max-height: 1800px;
+    overflow-y: hidden;
+    margin: 0 auto;
+    display: flex;
+}
+
+.sidebar {
+    width: 150px;
+    padding-top: 1.5rem;
+    flex-shrink: 0;
+    transform: translateY(60px);
+}
+
+.side-nav .nav-section {
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    font-size: 0.7rem;
+    color: #2d2e2f;
+    margin-left: 0.8rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    letter-spacing: 0.05em;
+    font-weight: 800;
+}
+
+.side-nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0.5rem 0.8rem;
+    font-size: 0.85rem;
+    color: #525960;
+    gap: 0.5rem;
+}
+
+
+.side-nav ul li a:hover {
+    color: #232629;
+}
+
+.side-nav img {
+    width: 18px;
+    height: 18px;
+    filter: invert(16%) brightness(94%);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 4rem 6rem;
+}
+
+/* Section Spacing */
+section {
+    margin-bottom: 6rem;
+}
+
+main {
+    position: relative;
+    top: -64px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9f9;
+    padding: 60px 0 0 60px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 5rem;
+}
+
+.hero-content {
+    flex: 1.2;
+    padding-bottom: 30px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #525960;
+    margin-bottom: 1rem;
+    max-width: 800px;
+}
+
+.highlight {
+    background-color: #f48225;
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+}
+
+.hero-image {
+    flex: 1.5;
+    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-image img {
+    width: 80%;
+    display: block;
+    transform: translateX(50px);
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero-actions .btn {
+    padding: 0.8rem 1.5rem;
+}
+
+/* Services Section */
+.services {
+    position: relative;
+    top: -50px;
+}
+
+.section-heading {
+    text-align: left;
+    margin-bottom: 2rem;
+    color: #232629;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 1px solid #e3e6e8;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card-body {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-logo img {
+    height: 30px;
+}
+
+.logo-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    color: #232629;
+}
+
+.logo-subtext {
+    color: #f48225;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+.fw-bold-ai,
+.fw-bold-ai1 {
+    font-weight: 700;
+    color: #f48225;
+    padding: 2px 6px;
+    border-radius: 5px;
+    background-color: #f48225;
+    margin-left: 4px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.fw-bold-ai1 {
+    padding: 2px;
+    background-color: transparent;
+}
+
+.card-ai .logo-text {
+    color: #ffffff;
+
+}
+
+.card-ai .fw-bold-ai {
+    color: #f48225;
+}
+
+.card-img {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.card-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Specific Card Styles */
+.card-teams {
+    border: 1px solid #e3e6e8;
+}
+
+.card-ai {
+    background-color: #2d3033;
+    color: #ffffff;
+    border: none;
+}
+
+.card-ai h3,
+.card-ai p {
+    color: #ffffff;
+}
+
+.card-ai .card-logo span {
+    color: #ffffff;
+}
+
+.card-ai .btn-ai {
+    background-color: #f48225;
+    border: none;
+    color: #ffffff;
+    padding-right: 1.5rem;
+}
+
+.card-ai .btn-ai:hover {
+    background-color: #e67700;
+}
+
+/* Small Cards Grid */
+.small-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.card.small {
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.card.small .card-body {
+    padding: 0;
+}
+
+.card.small .card-logo {
+    margin-bottom: 1rem;
+}
+
+.card.small .card-logo span {
+    font-size: 1.2rem;
+}
+
+.card.small p {
+    font-size: 1rem;
+    color: #525960;
+    margin-bottom: 1.5rem;
+}
+
+/* Careers Card */
+.card-careers {
+    border: 1px solid #e3e6e8;
+}
+
+.card-careers .card-img {
+    background-color: #ffffff;
+}
+
+.work-here {
+    transform: translateY(-120px);
+}
