@@ -1,0 +1,234 @@
+:root {
+    --bg-color: #0d1117;
+    --header-bg: #010409;
+    --text-color: #e6edf3;
+    --text-muted: #848d97;
+    --border-color: #30363d;
+    --link-hover: #ffffff;
+    --accent-blue: #2f81f7;
+    --search-bg: #0d1117;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+}
+
+/* Main Header */
+.main-header {
+    background-color: var(--header-bg);
+    padding: 12px 24px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo svg {
+    fill: #ffffff;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.main-nav li {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.main-nav li:hover {
+    color: var(--text-muted);
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid var(--text-muted);
+    margin-left: 4px;
+    margin-top: 2px;
+}
+
+.main-nav li:hover .caret {
+    border-top-color: var(--text-color);
+}
+
+/* Header Right */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    background-color: var(--search-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 6px 12px;
+    padding-right: 30px;
+    color: var(--text-color);
+    font-size: 14px;
+    width: 280px;
+    outline: none;
+    transition: width 0.3s;
+}
+
+.search-container input:focus {
+    width: 320px;
+    border-color: var(--accent-blue);
+    background-color: #ffffff;
+    color: #000;
+}
+
+.search-slash {
+    position: absolute;
+    right: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0 5px;
+    font-size: 12px;
+    color: var(--text-muted);
+    pointer-events: none;
+}
+
+.sign-in {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sign-up {
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #ffffff;
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+
+.sign-up:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Sub Nav */
+.sub-nav {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    height: 48px;
+}
+
+.sub-nav-container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 32px;
+    display: flex;
+}
+
+.sub-nav ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+}
+
+.sub-nav li {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    cursor: pointer;
+    color: var(--text-color);
+    position: relative;
+    height: 100%;
+}
+
+.sub-nav li:hover {
+    color: var(--text-color);
+}
+
+.sub-nav li.active {
+    font-weight: 600;
+}
+
+.sub-nav li.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-blue);
+}
+
+.page-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 32px;
+}
+
+.intro h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: var(--text-color);
+}
+
+.main-layout {
+    display: flex;
+    gap: 32px;
+}
+
+.left-column {
+    flex: 2;
+}
+
+.right-column {
+    flex: 1;
+}

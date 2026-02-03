@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Clone Exam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128">
+                    <defs>
+                        <linearGradient id="SVGIbGPWdSe" x1="128" x2="128" y1="0" y2="256" gradientTransform="scale(.5)"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#2684ff" />
+                            <stop offset="1" stop-color="#0052cc" />
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#SVGIbGPWdSe)"
+                        d="M12.5 0h103c6.925 0 12.5 5.575 12.5 12.5v103c0 6.925-5.575 12.5-12.5 12.5h-103C5.575 128 0 122.425 0 115.5v-103C0 5.575 5.575 0 12.5 0" />
+                    <path fill="#fff"
+                        d="M78.32 16.64h27.04c3.324 0 6 2.676 6 6v44c0 3.324-2.676 6-6 6H78.32c-3.324 0-6-2.676-6-6v-44c0-3.324 2.676-6 6-6m-55.68 0h27.04c3.324 0 6 2.676 6 6v76c0 3.324-2.676 6-6 6H22.64c-3.324 0-6-2.676-6-6v-76c0-3.324 2.676-6 6-6" />
+                </svg>
+                <div>
+                    <p>ATLASSIAN</p>
+                    <h2>Trello</h2>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="auth-container">
+            <button>Log in</button>
+            <button>Get Trello for free</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="header-gap"></div>
+            <h1>
+                Capture, organize, and tackle your to-dos from anywhere.
+            </h1>
+            <p>
+                Escape the clutter and chaos—unleash your productivity with Trello.
+            </p>
+            <form action="#">
+                <input type="email" placeholder="Email" required>
+                <input type="submit" value="Sign up - it's free!">
+            </form>
+            <p class="link-text">
+                By entering my email, I acknowledge the
+                <a href="#">
+                    Atlassian Privacy Policy
+                </a>
+            </p>
+        </section>
+
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="features-header">
+                <h2>From message to action</h2>
+                <p>
+                    Quickly turn communication from your favorite apps into to-dos,
+                    keeping all your discussions and tasks organized in one place.
+                </p>
+            </div>
+
+            <article class="email-magic">
+                <img src="./assets/image.png" alt="Feature Image of Email Magic" class="article-main-image">
+                <div class="article-text-container">
+                    <div>
+                        <img src="./trello-com/svgexport-24.svg" alt="" class="article-icons">
+                        <h3>EMAIL MAGIC</h3>
+                    </div>
+                    <p>
+                        Easily turn your emails into to-dos! Just forward them to your Trello Inbox, and they’ll be
+                        transformed by AI into organized to-dos with all the links you need.
+                    </p>
+                </div>
+            </article>
+
+            <article class="message-app-sorcery">
+                <div class="article-text-container">
+                    <div>
+                        <img src="./trello-com/svgexport-25.svg" alt="" class="article-icons">
+                        <h3>MESSAGE APP SORCERY</h3>
+                    </div>
+                    <p>
+                        Need to follow up on a message from Slack or Microsoft Teams? Send it directly to your Trello
+                        board! Your favorite app interface lets you save messages that appear in your Trello Inbox with
+                        AI-generated summaries and links.
+                    </p>
+                </div>
+                <img src="./assets/image copy.png" alt="Feature Image of Email Magic" class="article-main-image">
+            </article>
+        </section>
+
+
+        <!-- Cards Section -->
+        <section class="cards-section">
+            <div class="cards-header">
+                <h4>WORK SMARTER</h4>
+                <h2>Do more with Trello</h2>
+                <p>
+                    Customize the way you organize with easy integrations, automation, and mirroring of your to-dos
+                    across multiple locations.
+                </p>
+            </div>
+
+            <div class="cards-container">
+                <article class="card">
+                    <img src="./trello-com/svgexport-26.svg" alt="">
+                    <h2>Integrations</h2>
+                    <p>
+                        Connect the apps you are already using into your Trello workflow or add a Power-Up to fine-tune
+                        your specific needs.
+                    </p>
+                    <button><a href="#">Browse Integrations</a></button>
+                </article>
+
+                <article class="card">
+                    <img src="./trello-com/svgexport-27.svg" alt="">
+                    <h2>Automation</h2>
+                    <p>
+                        No-code automation is built into every Trello board. Focus on the work that matters most and let
+                        the robots do the rest.
+                    </p>
+                    <button><a href="#">Get to know Automation</a></button>
+                </article>
+
+                <article class="card">
+                    <img src="./trello-com/svgexport-28.svg" alt="">
+                    <h2>Card mirroing</h2>
+                    <p>
+                        View all your to-dos from multiple boards in one place. Mirror a card to keep track of work
+                        wherever you need it!
+                    </p>
+                    <button><a href="#">Compare plans</a></button>
+                </article>
+            </div>
+
+            <div class="cards-links">
+                <h2>
+                    Join a community of millions of users globally who are using Trello to get more done.
+                </h2>
+                <img src="./trello-com/Company logos: Visa, Coinbase, John Deere, Zoom, Grand Hyatt and Fender.svg"
+                    alt="Company logos">
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Get started with Trello today</h2>
+            <form action="#">
+                <input type="email" placeholder="Email" required>
+                <input type="submit" value="Sign up - it's free!">
+            </form>
+            <p class="link-text">
+                By entering my email, I acknowledge the
+                <a href="#">
+                    Atlassian Privacy Policy
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-terms">
+                <div class="language-selector">
+                    <img src="./trello-com/svgexport-32.svg" alt="Globe" class="footer-icon">
+                    <span>English</span>
+                    <img src="./trello-com/svgexport-2.svg" alt="Chevron" class="footer-icon chevron">
+                </div>
+                <nav class="footer-nav">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                    <span class="copyright">Copyright © 2024 Atlassian</span>
+                </nav>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#"><img src="./trello-com/svgexport-34.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="./trello-com/svgexport-35.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="./trello-com/svgexport-36.svg" alt="LinkedIn"></a></li>
+                <li><a href="#"><img src="./trello-com/svgexport-37.svg" alt="Twitter"></a></li>
+                <li><a href="#"><img src="./trello-com/svgexport-38.svg" alt="YouTube"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
