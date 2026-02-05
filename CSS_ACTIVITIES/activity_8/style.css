@@ -9,11 +9,10 @@ body {
     color: #232629;
     line-height: 1.5;
     background-color: #ffffff;
-    height: fit-content;
-    border: 1px solid;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
-/* Typography */
 a {
     text-decoration: none;
     color: inherit;
@@ -43,7 +42,6 @@ h3 {
     margin-bottom: 1rem;
 }
 
-/* Buttons */
 .btn {
     padding: 0.8rem 1.2rem;
     border-radius: 4px;
@@ -104,6 +102,18 @@ h3 {
 
 .link:hover {
     color: #005999;
+}
+
+.menu-toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 /* Top Nav */
@@ -196,8 +206,6 @@ h3 {
 /* Layout */
 .layout-container {
     max-width: 1264px;
-    max-height: 1800px;
-    overflow-y: hidden;
     margin: 0 auto;
     display: flex;
 }
@@ -421,7 +429,6 @@ main {
     margin-top: 1.5rem;
 }
 
-/* Specific Card Styles */
 .card-teams {
     border: 1px solid #e3e6e8;
 }
@@ -452,7 +459,6 @@ main {
     background-color: #e67700;
 }
 
-/* Small Cards Grid */
 .small-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -483,7 +489,6 @@ main {
     margin-bottom: 1.5rem;
 }
 
-/* Careers Card */
 .card-careers {
     border: 1px solid #e3e6e8;
 }
@@ -494,4 +499,404 @@ main {
 
 .work-here {
     transform: translateY(-120px);
+}
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+/* Medium (Tablet) */
+@media (max-width: 1023px) {
+    .nav-container {
+        flex-wrap: nowrap;
+        padding: 0 0.75rem;
+    }
+
+    .logo {
+        margin-right: 0.75rem;
+    }
+
+    .main-nav ul {
+        gap: 0.75rem;
+    }
+
+    .search-bar {
+        flex: 1 1 auto;
+        min-width: 0;
+        margin: 0 0.5rem;
+    }
+
+    .search-bar input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .layout-container {
+        flex-wrap: nowrap;
+    }
+
+    .sidebar {
+        width: 120px;
+        padding-top: 1rem;
+        transform: translateY(56px);
+    }
+
+    .side-nav ul li a {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.4rem 0.4rem 0.6rem;
+    }
+
+    .side-nav img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .content {
+        padding: 2rem 2rem 3rem;
+    }
+
+    section {
+        margin-bottom: 4rem;
+    }
+
+    main {
+        top: -60px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 2.5rem 2rem 0;
+        margin-bottom: 3rem;
+    }
+
+    .hero-content {
+        flex: none;
+        padding-bottom: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-image {
+        flex: none;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 85%;
+        max-width: 400px;
+        transform: translateX(0);
+    }
+
+    .card-teams,
+    .card-ai,
+    .card-careers {
+        flex-direction: column;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .card-img {
+        order: 0;
+    }
+
+    .card-img img {
+        width: 100%;
+    }
+
+    .small-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.small {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .section-heading {
+        font-size: 1.35rem;
+    }
+
+    .services {
+        top: -30px;
+    }
+
+    .work-here {
+        transform: translateY(-80px);
+    }
+}
+
+/* Small (Mobile) */
+@media (max-width: 480px) {
+    .top-nav {
+        height: auto;
+        min-height: 50px;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        padding: 0.5rem 0.75rem;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        margin-right: auto;
+        order: 0;
+    }
+
+    .auth-buttons {
+        order: 0;
+    }
+
+    .logo-icon {
+        height: 26px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+    }
+
+    .menu-toggle-label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        cursor: pointer;
+        margin-left: 0.5rem;
+        border-radius: 4px;
+        background: transparent;
+    }
+
+    .menu-toggle-label:hover {
+        background-color: #f1f2f3;
+    }
+
+    .menu-toggle-label span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: #525960;
+        border-radius: 1px;
+        transition: opacity 0.2s, transform 0.2s;
+    }
+
+    #menu-toggle:checked ~ .menu-toggle-label span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    #menu-toggle:checked ~ .menu-toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked ~ .menu-toggle-label span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .main-nav {
+        width: 100%;
+        order: 4;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    #menu-toggle:checked ~ .main-nav {
+        max-height: 200px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem 0;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 0.75rem 0.8rem;
+        font-size: 1rem;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    .search-bar {
+        order: 2;
+        width: 100%;
+        margin: 0;
+        min-width: 0;
+    }
+
+    .search-bar input {
+        font-size: 16px;
+        padding: 0.6rem 0.8rem;
+        min-height: 44px;
+    }
+
+
+    .auth-buttons .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .layout-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 0;
+        transform: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        border-bottom: 1px solid #e3e6e8;
+    }
+
+    body:has(#menu-toggle:checked) .sidebar {
+        max-height: 400px;
+        overflow: auto;
+    }
+
+    .side-nav .nav-section {
+        margin-bottom: 1rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .side-nav ul li a {
+        padding: 0.65rem 0.8rem;
+        font-size: 1rem;
+        min-height: 44px;
+    }
+
+    .side-nav img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .content {
+        padding: 1.25rem 1rem 2rem;
+    }
+
+    section {
+        margin-bottom: 3rem;
+    }
+
+    main {
+        top: 0;
+    }
+
+    .hero {
+        padding: 1.5rem 1rem 0;
+        margin-bottom: 2rem;
+        border-radius: 6px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.35rem;
+        line-height: 1.25;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        margin-bottom: 1.25rem;
+    }
+
+    .highlight {
+        padding: 4px 12px;
+        font-size: inherit;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .hero-actions .btn {
+        padding: 0.65rem 1.25rem;
+        min-height: 44px;
+        font-size: 1rem;
+    }
+
+    .hero-actions .link {
+        font-size: 16px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .card-logo img {
+        height: 26px;
+    }
+
+    .card .logo-text {
+        font-size: 1.25rem;
+    }
+
+    .card-actions {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .card-actions .btn {
+        min-height: 44px;
+        padding: 0.65rem 1rem;
+    }
+
+    .card-actions .link {
+        font-size: 16px;
+    }
+
+    .small-cards {
+        margin-bottom: 2rem;
+    }
+
+    .card.small {
+        padding: 1.25rem;
+    }
+
+    .section-heading {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .services {
+        top: 0;
+    }
+
+    .work-here {
+        transform: none;
+    }
+}
+
+/* Desktop */
+@media (min-width: 481px) {
+    .menu-toggle-label {
+        display: none;
+    }
 }

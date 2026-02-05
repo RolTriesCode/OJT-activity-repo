@@ -443,7 +443,6 @@ input[type="email"]::placeholder {
 .footer-language i,
 .footer-language::before {
     content: "🌐";
-    /* Using a globe-like symbol or text as in the image */
     position: absolute;
     left: 15px;
     top: 50%;
@@ -473,4 +472,232 @@ input[type="email"]::placeholder {
 .footer-recaptcha {
     font-size: 11px;
     color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* ============================
+   Medium screens (481px–1023px)
+   ============================ */
+@media (max-width: 1023px) {
+
+    header {
+        padding: 20px 40px;
+    }
+
+    .hero-section {
+        height: 80vh;
+    }
+
+    .hero-texts h1 {
+        font-size: 40px;
+    }
+
+    .hero-texts h5 {
+        font-size: 18px;
+    }
+
+    .hero-texts form {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-texts form input[type="email"] {
+        width: 90%;
+    }
+
+    .hero-texts form button {
+        width: 60%;
+        justify-content: center;
+    }
+
+    .filter-section,
+    .join-cards,
+    .faq-list,
+    .main-footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .images-section {
+        width: 100%;
+        padding: 0 40px;
+        gap: 30px;
+    }
+
+    .images-div h1 {
+        font-size: 70px;
+    }
+
+    .swipe-button {
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .join-cards {
+        flex-wrap: wrap;
+    }
+
+    .join-card {
+        min-width: 45%;
+    }
+
+    .footer-cta form {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-cta form input[type="email"] {
+        width: 90%;
+    }
+
+    .footer-cta form button {
+        width: 60%;
+        justify-content: center;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ============================
+   Small screens (≤480px)
+   ============================ */
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 15px 16px;
+    }
+
+    header svg {
+        width: 90px;
+    }
+
+    header button,
+    header select {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .hero-section {
+        height: 75vh;
+    }
+
+    .hero-texts {
+        width: 90%;
+    }
+
+    .hero-texts h1 {
+        font-size: 30px;
+    }
+
+    .hero-texts h5 {
+        font-size: 16px;
+        margin: 16px 0 24px 0;
+    }
+
+    .hero-texts p {
+        font-size: 14px;
+    }
+
+    .hero-texts form {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .hero-texts form input[type="email"] {
+        width: 100%;
+    }
+
+    .hero-texts form button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .filter-section,
+    .join-cards,
+    .faq-list,
+    .main-footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .filter-section {
+        align-items: flex-start;
+    }
+
+    .filter-section h2 {
+        font-size: 20px;
+    }
+
+    .filter-section div {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .images-section {
+        padding: 0 16px;
+        gap: 16px;
+        overflow-x: auto;
+    }
+
+    .images-div h1 {
+        font-size: 52px;
+    }
+
+    .swipe-button {
+        display: none;
+    }
+
+    .join-section {
+        margin-top: 24px;
+    }
+
+    .join-cards {
+        flex-direction: column;
+    }
+
+    .join-card {
+        min-width: 100%;
+    }
+
+    .faq-question {
+        font-size: 18px;
+        padding: 18px;
+    }
+
+    .footer-cta {
+        padding: 40px 16px;
+    }
+
+    .footer-cta form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-cta form input[type="email"] {
+        width: 100%;
+    }
+
+    .footer-cta form button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px 24px;
+    }
+
+    .footer-language select {
+        width: 100%;
+    }
 }
